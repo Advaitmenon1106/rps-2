@@ -9,6 +9,7 @@ let roundResult = document.querySelector('#roundResult')
 scoreboard.setAttribute('style', 'font-size: 35px; margin-top: 3%');
 scoreboard.innerHTML = 'Player (you) : '+ 0 + ' | Computer : '+ 0 + '| Ties : '+ 0;
 
+
 imgRock.addEventListener('click', ()=>{
     compChoiceIndex = Math.floor(Math.random()*3);
     compChoice = choices[compChoiceIndex];
@@ -22,7 +23,7 @@ imgRock.addEventListener('click', ()=>{
         
         roundResult.innerHTML = 'Computer chose ' + compChoice + ', you chose rock. You\'ve lost this round!';  
     }
-    else if (compChoice == 2){
+    else if (compChoiceIndex == 2){
         
         roundResult.innerHTML = 'Computer chose ' + compChoice + ', you chose rock. You\'ve won!'; 
     }
@@ -42,7 +43,7 @@ imgPaper.addEventListener('click', ()=>{
          
         roundResult.innerHTML = 'Computer chose ' + compChoice + ', you chose paper. Tied!';  
     }
-    else if (compChoice == 2){
+    else if (compChoiceIndex == 2){
         
         roundResult.innerHTML = 'Computer chose ' + compChoice + ', you chose paper. You\'ve lost this round!'; 
     }
@@ -62,7 +63,7 @@ imgScissor.addEventListener('click', ()=>{
         
         roundResult.innerHTML = 'Computer chose ' + compChoice + ', you chose scissor. You\'ve won this round!';  
     }
-    else if (compChoice == 2){
+    else if (compChoiceIndex == 2){
         
         roundResult.innerHTML = 'Computer chose ' + compChoice + ', you chose scissor. Tied!'; 
     }
