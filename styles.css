@@ -1,0 +1,36 @@
+body{
+    background-color: white;
+}
+
+.rules{
+    width: 45%;
+    margin: auto;
+    text-align: center;
+    background-color: silver;
+    border-radius: 20px;
+    opacity: 0.75; 
+}
+
+.iconBox{
+    margin-top: 50px;
+    margin-right: 20%;
+    margin-left: 20%;
+    display: flex;
+    height: fit-content;
+    justify-content: space-between;
+}
+
+img:hover{
+    cursor: pointer;
+    background-color: silver;
+    opacity: 0.7;
+    transition-duration: 0.5s;
+}
+
+.scoreboard{
+    text-align: center;
+}
+
+.roundResult{
+    text-align: center;
+}

@@ -28,7 +28,7 @@ while (counter<5){
 
     //Player input
 
-    function player_input(i){
+   function player_input(i){
         while (choices.indexOf(i) == -1){
             i = prompt("[Game "+ (counter+1)+"] Wrong choice! Make a choice between 'rock', 'paper' and 'scissor'.").toLowerCase();
         }
